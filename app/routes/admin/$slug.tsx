@@ -57,7 +57,7 @@ const EditPost = () => {
     const transition = useTransition()
 
     return (
-        <Form method="post">
+        <Form key={post.slug} method="post">
             <p>
                 <label>
                     Post Title: {errors?.title && <em>Title is required</em>}
